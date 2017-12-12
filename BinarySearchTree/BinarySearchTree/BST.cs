@@ -70,7 +70,6 @@ namespace BinarySearchTree
                         Console.WriteLine("Left");
                         continue;
                     }
-                    continue;
                 }
                 else if (current.Data < searchData)
                 {
@@ -78,11 +77,11 @@ namespace BinarySearchTree
                     {
                         current = current.Right;
                         Console.WriteLine("Right");
-                        continue;
+                        return true;
                     }
-                    continue;
                 }
             }
+            Console.WriteLine("Not Found");
             return false;
         }
     }
