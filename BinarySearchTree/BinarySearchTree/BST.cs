@@ -28,7 +28,7 @@ namespace BinarySearchTree
                 {
                     if (current.Left != null)
                     {
-                        current.Left = current;
+                        current = current.Left;
                         continue;
                     }
                     else if (current.Left == null)
@@ -41,7 +41,7 @@ namespace BinarySearchTree
                 {
                     if (current.Right != null)
                     {
-                        current.Right = current;
+                        current = current.Right;
                         continue;
                     }
                     else if (current.Right == null)
@@ -51,7 +51,6 @@ namespace BinarySearchTree
                     }
                 }
             }
-            current.Left = node;
         }
         public bool Search (int searchData)
         {
@@ -67,7 +66,7 @@ namespace BinarySearchTree
                 {
                     if (current != null)
                     {
-                        current.Left = current;
+                        current = current.Left;
                         Console.WriteLine("Left");
                         continue;
                     }
@@ -77,7 +76,7 @@ namespace BinarySearchTree
                 {
                     if (current.Right != null)
                     {
-                        current.Right = current;
+                        current = current.Right;
                         Console.WriteLine("Right");
                         continue;
                     }

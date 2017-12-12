@@ -25,12 +25,12 @@ namespace BinarySearchTree
         public Node Left
         {
             get { return left; }
-            set { }
+            set { left = value; }
         }
         public Node Right
         {
             get { return right; }
-            set { }
+            set { right = value; }
         }
         public Node(int item)
         {
